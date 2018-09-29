@@ -42,21 +42,7 @@ public class Main {
         
         //Listar Viajes
         
-        System.out.println("AGENCIA AVIATUR");
-        System.out.println("LOS VUELOS OFRECIDOS SON:");
-        Travel[] travels=agencia.listarVuelos();
-        for(int i=0;i<10;i++){
-            if(travels[i]!=null){
-                int o=i+1;
-                System.out.println("VIAJE #"+o);
-                System.out.println("Ida:");
-                System.out.println("Numero de vuelo: "+ travels[i].getOutbound().getFlightNumber()+"\n Aeropuerto: "+travels[i].getOutbound().getTo().getDescription());
-                System.out.println("Vuelta:");
-                System.out.println("Numero de vuelo: "+ travels[i].getReturrn().getFlightNumber()+"\n Aeropuerto: "+travels[i].getOutbound().getFrom().getDescription());
-
-            }
-        }
-        
+        System.out.println(agencia.toString());
     }
     
 }
