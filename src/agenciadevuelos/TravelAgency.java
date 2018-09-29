@@ -70,7 +70,10 @@ public class TravelAgency {
     public Travel[] getOfferedtravels() {
         return offeredtravels;
     }
-
+    
+    public Travel[] listarVuelos(){
+        return offeredtravels;
+    }
  
     
 }
