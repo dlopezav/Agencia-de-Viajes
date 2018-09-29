@@ -74,6 +74,17 @@ public class TravelAgency {
     public Travel[] listarVuelos(){
         return offeredtravels;
     }
- 
+    public String toString(){
+        String str="AGENCIA DE VUELOS AVIATUR";
+        str+="\n Los vuelos ofrecidos son:\n";
+        for(int i=0;i<offeredtravels.length;i++){
+            int o=i+1;
+            if(offeredtravels[i]!=null){
+            str+="Vuelo #"+o+" ";
+            str+=offeredtravels[i].toString();
+            }
+        }
+        return str;
+    }
     
 }

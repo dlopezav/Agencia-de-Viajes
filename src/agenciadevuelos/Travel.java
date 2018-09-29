@@ -65,6 +65,8 @@ public class Travel {
     public void setHotel(Hotel hotel) {
         this.hotel = hotel;
     }
-    
+    public String toString(){
+        return "\n Aeropuerto de salida: "+outbound.getFrom().getDescription()+", con numero de vuelo: "+outbound.getFlightNumber()+".\n Aeropuerto de regreso: "+returrn.getFrom().getDescription() +", con numero de vuelo: "+returrn.getFlightNumber();
+    }
     
 }
